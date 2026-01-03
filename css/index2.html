@@ -9,10 +9,15 @@
         p{
             color:blue;
         }
+        .test{
+            color:green;
+        }
     </style>
     <script>
         function getdate(){
-            document.getElementById("date").innerHTML=Date();
+            console.log(document.getElementsByClassName("test"));
+            document.getElementsByClassName("test")[0].innerHTML=Date();
+            document.getElementsByClassName("test")[1].innerHTML=Date();
         }
         </script>
 </head>
@@ -24,6 +29,7 @@
     <p>hello what to do</p>
     <h1 style="color:red;">hello ayan here</h1>
     <h1>hello ayan here</h1>
-    <p id="date"></p>
+    <p class="test"></p>
+    <p class="test"></p>
 </body>
 </html>
